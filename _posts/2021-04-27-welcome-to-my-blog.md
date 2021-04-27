@@ -2,7 +2,9 @@
 layout: post
 title: "welcome to my blog!"
 date: 2021-04-27
+author: andre
 ---
 
+and so, i became a blogger.
 
-the talk about github pages today in the r/pltd discord server spiked my interest. i always wanted to have my own simple website, with a blog section so i could have fun typing away. i actually did it, and i hope people enjoy the silly little things that i post here. i will be mainly focusing on stories, talking about programming, and my passion for language design and implementation. thank you for stopping by! (:
+the talk over at the r/pltd discord server really spiked my interest on github pages and how you can host your own little website for free with it. i wanted a small platform where i could do some blogging and have a neat little website, so i decided to join the github pages train, and i must admit, it's really easy to get it all set up! i will be mostly posting stories from my day-to-day experience, as well as some programming related posts, or some posts that are more "technical". i hope people enjoy reading these as much as i enjoy writing them!
