@@ -6,8 +6,8 @@ title: andre's personal blog
 <ul class="posts">
 	{% for post in site.posts %}
 		<li>
-			<h3>{{ post.title }} | {{ post.date | date_to_string }}</h3>
-			<span class="thick inline-itm">{{ post.excerpt }} <a class="inline-itm" href="{{ post.url }}">read more...</a></span>
+			<h3>{{ post.title }} | {{ post.date | date_to_string | downcase }}</h3>
+			<span>{{ post.excerpt }}</span><a href="{{ post.url }}" title="{{ post.title }}">read more...</a>
 		</li>
 	{% endfor %}
 </ul>
