@@ -6,8 +6,10 @@ title: andre's personal blog
 <ul class="posts">
 	{% for post in site.posts %}
 		<li>
-			<h3>{{ post.title }} | {{ post.date | date_to_string | downcase }}</h3>
-			<span>{{ post.excerpt }}</span><a href="{{ post.url }}" title="{{ post.title }}">read more...</a>
+			<p>
+				{{ post.title }}, {{ post.date | date_to_string | downcase }}
+				<a href="{{ post.url }}">read more</a>
+			</p>
 		</li>
 	{% endfor %}
 </ul>
