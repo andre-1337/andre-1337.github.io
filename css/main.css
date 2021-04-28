@@ -51,6 +51,7 @@ p {
 }
 
 p.thick {
+  font-size: 1.3em;
   font-weight: bold;
 }
 
