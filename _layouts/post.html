@@ -1,11 +1,52 @@
 ---
 layout: default
 ---
-<p class="meta">{{ page.date | date_to_string | downcase }} | {{ page.author }} </p>
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
+<p class="meta">
+	<strong>{{ page.date | date: "%d %b, %y" | downcase }}</strong> | 
+	written with &#10084; by <strong>{{ page.author }}</strong>
+	{% if page.collab %}
+	, in collaboration with <strong>{{ page.collab }}</strong>
+	{% endif %}
+	{% if page.proofreader %}
+	and carefully revised by <strong>{{ page.proofreader }}</strong>
+	{% endif %}
+	<br>
+	tags:
+	<span>[
+		{% for tag in page.tags %}
+			{% capture tag_name %}
+				{{ tag }}
+			{% endcapture %}
+			<a href="/tag/{{ tag_name }}">
+				<code class="highligher-rouge">
+					<nobr>
+						{{ tag_name }}
+					</nobr>
+				</code>
+			</a>
+		{% endfor %}
+	]</span>
+</p>
+<br>
 
 <div class="post">
-  <h3>
-    {{ content }}
-  </h3>
+	{{ content }}
+</div>
+
+<div class="post-nav">
+	<p>
+		{% if page.previous.url %}
+			<a class="prev" href="{{ page.previous.url }}">
+				&#8672;&nbsp; {{ page.previous.title }}
+			</a>
+		{% endif %}
+	</p>
+	<p>
+		{% if page.next.url %}
+			<a class="next" href="{{ page.next.url }}">
+				{{ page.next.title }} &nbsp;&#8674;
+			</a>
+		{% endif %}
+	</p>
 </div>

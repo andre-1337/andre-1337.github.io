@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="post">
+  <h1>tag: {{ page.tag }}</h1>
+    {% for post in site.tags[page.tag] %}
+      <p>
+        {{ post.date | date: "%d %b, %y" | downcase }} » <strong>{{ post.title }}</strong>
+        <a href="{{ post.url }}" title="{{ post.title }}">read more...</a> 
+      </p>
+    {% endfor %}
+</div>

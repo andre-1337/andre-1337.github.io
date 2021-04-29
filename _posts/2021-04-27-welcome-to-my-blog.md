@@ -3,6 +3,7 @@ layout: post
 title: "welcome to my blog!"
 date: 2021-04-27
 author: andre
+tags: all
 ---
 
 and so, i became a blogger.

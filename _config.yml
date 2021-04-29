@@ -4,3 +4,6 @@ permalink: /blog/:year/:month/:day/:title
 footer-links:
     github: andre-1337
     email: andremont0101@gmail.com
+
+plugins:
+  - jekyll-feed

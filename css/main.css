@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 60px auto;
-  width: 70%;
+  width: 80%;
 }
 
 nav ul, footer ul {
@@ -25,7 +25,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #333;
 }
 
 h1 {
@@ -50,9 +51,9 @@ p {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
-p.thick {
-  font-size: 1.3em;
-  font-weight: bold;
+p.light {
+  font-size: 1.1em;
+  font-weight: 200;
 }
 
 footer {
@@ -62,9 +63,44 @@ footer {
 
 ul.posts {
   margin: 20px auto 40px;
-  font-size: 1.5em;
 }
 
 ul.posts li {
   list-style: none;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: flex;
+}
+
+.post-nav p {
+  flex: 1 1 0;
+  width: 45%;
+  font-size: 1.5em;
+}
+
+.post-nav p:first-child {
+  padding-right: 0.5em;
+}
+
+.post-nav p:last-child {
+  padding-left: 0.5em;
+  text-align: right;
+}
+
+.tags {
+  display: inline;
+}
+
+.tags a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #999;
+}
+
+.tags a:hover {
+  text-decoration: none;
+  color: #333;
 }
