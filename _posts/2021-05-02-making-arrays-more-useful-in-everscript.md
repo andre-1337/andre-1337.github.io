@@ -84,7 +84,9 @@ inside the `call()` method, we add some checks:
   } else callback = (ESFunction) arguments.get(0);
 
   if (callback.arity() < 1 || callback.arity() > 1) {
-    throw new RuntimeError(caller, "Expected callback to take 1 argument, got " + callback.arity() + " instead.");
+    throw new RuntimeError(
+      caller, "Expected callback to take 1 argument, got " + callback.arity() + " instead."
+    );
   }
 ```
 
@@ -96,7 +98,11 @@ now, this is where the magic happens:
 
 ```java
   for (int i = 0; i < array.length(); i++) {
-    callback.call(interpreter, new ArrayList<>(Collections.singletonList(array.elements.get(i))), caller);
+    callback.call(
+      interpreter, 
+      new ArrayList<>(Collections.singletonList(array.elements.get(i))), 
+      caller
+    );
   }
 ```
 
@@ -151,7 +157,9 @@ the easy part is done. again, we re-use the checks from `.forEach()`, since `.ma
     } else callback = (ESFunction) arguments.get(0);
 
     if (callback.arity() < 1 || callback.arity() > 1) {
-      throw new RuntimeError(caller, "Expected callback to take 1 argument, got " + callback.arity() + " instead.");
+      throw new RuntimeError(
+        caller, "Expected callback to take 1 argument, got " + callback.arity() + " instead."
+      );
     }
     // ...
   }
@@ -176,7 +184,11 @@ this is where we will place all the values while we iterate the array. next, we 
 this loop iterates the array just like the `.forEach()` function would do. except, we have a couple of extra things to add:
 
 ```java
-  Object element = callback.call(interpreter, new ArrayList<>(Collections.singletonList(array.elements.get(i))), caller);
+  Object element = callback.call(
+    interpreter, 
+    new ArrayList<>(Collections.singletonList(array.elements.get(i))), 
+    caller
+  );
 ```
 
 here, we store the result of the callback call in the variable, so we can push it onto the array:
@@ -206,7 +218,7 @@ great, right?! if you want to get a little bit fancier, though:
 let array = [ 1, 2, 3 ];
 array
   .map(function(elem) => elem * 2;)
-  .forEach(function(elem) => println(elem);); [ 2, 4, 6 ];
+  .forEach(function(elem) => println(elem);); // [ 2, 4, 6 ];
 ```
 
 since we return a new `ESArray` object, we can call `.forEach()` directly on the `.map()` method, or just chain `.map()` at your hearts desire.
@@ -215,4 +227,4 @@ with this, we just added a bunch of new possibilities to **EverScript**, althoug
 
 i know this post is considerably bigger than the last one, but hopefully it can compensate for my lack of presence for the past few days.
 
-as always, i love you all &#10084; be safe out there, and don't forget tomorrow is mother's day for most of the world. make sure to tell your mom that you love her, if you have any contact with her. thank you for taking the time to read this post, and i'll see you next time!
+as always, i love you all &#10084; be safe out there, and don't forget that today is mother's day for most of the world. make sure to tell your mom that you love her, if you have any contact with her. thank you for taking the time to read this post, and i'll see you next time!

@@ -61,6 +61,17 @@ footer {
   font-size: .8em;
 }
 
+ul {
+  margin: 20px auto 40px;
+}
+
+ul li {
+  list-style: disc;
+  font-size: 1.5em;
+  color: #333;
+  line-height: 1.4em;
+}
+
 ul.posts {
   margin: 20px auto 40px;
 }
@@ -103,4 +114,14 @@ ul.posts li {
 .tags a:hover {
   text-decoration: none;
   color: #333;
+}
+
+pre code {
+  border: 1px solid #666;
+  display: block;
+  padding: 20px;
+}
+
+code {
+  font-size: 1.3em;
 }
