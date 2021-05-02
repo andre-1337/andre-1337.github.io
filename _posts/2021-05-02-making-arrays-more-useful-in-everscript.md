@@ -227,4 +227,4 @@ with this, we just added a bunch of new possibilities to **EverScript**, althoug
 
 i know this post is considerably bigger than the last one, but hopefully it can compensate for my lack of presence for the past few days.
 
-as always, i love you all &#10084; be safe out there, and don't forget that today is mother's day for most of the world. make sure to tell your mom that you love her, if you have any contact with her. thank you for taking the time to read this post, and i'll see you next time!
+as always, i love you all &#10084; be safe out there, and don't forget that today is mother's day for some parts of the world. make sure to tell your mom that you love her (if you happen to live in one of the 9 countries that celebrates this occasion today), if you have any contact with her. thank you for taking the time to read this post, and i'll see you next time!
