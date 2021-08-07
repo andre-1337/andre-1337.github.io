@@ -1,0 +1,54 @@
+
+nav.dark {
+    background: hsl(0, 0%, 7%);
+}
+
+body {
+    background: hsl(0, 0%, 10%);
+}
+
+h1, h2, h3, h4, h5, h6, nav.dark, p {
+    color: rgba(175, 175, 175, 0.85);
+}
+
+body, label, a.button:hover, button:hover, pre:before, pre, blockquote {
+    color: hsla(0, 100%, 100%, 0.60);
+}
+
+a {
+    color: rgba(201, 201, 201, 0.65);
+}
+
+ul li {
+    color: rgba(175, 175, 175, 0.85);
+}
+
+img {
+    border-radius: unset;
+}
+
+blockquote {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    border-top: none;
+    border-bottom: none;
+    border-left: #9371e6 0.4rem solid;
+    padding: 1rem;
+}
+
+label {
+    font-weight: normal;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="search"], 
+input[type="url"], 
+select, 
+textarea {
+    background: hsl(0, 0%, 14%);
+    border: none;
+    color: hsla(0, 100%, 100%, 0.60);
+}

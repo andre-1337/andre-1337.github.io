@@ -9,7 +9,7 @@ title: topics
     <a href="/tag/{{ tag | first | slugify }}">
       <code class="highligher-rouge">
         <nobr>
-          [{{ tag[0] | replace: '-', ' ' }} [{{ tag | last | size }}]]
+          {{ tag[0] | replace: '-', ' ' }} ({{ tag | last | size }})
         </nobr>
       </code>
     </a>

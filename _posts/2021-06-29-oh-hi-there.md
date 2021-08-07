@@ -3,7 +3,7 @@ layout: post
 title: "oh hi there"
 date: 2021-06-29
 author: andre
-tags: all
+tags: all updates
 ---
 
 we're back!
